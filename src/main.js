@@ -17,7 +17,6 @@ import vuetify from "./plugins/vuetify";
 //   vuetify,
 // });
 
-
 Vue.config.productionTip = false;
 
 new Vue({

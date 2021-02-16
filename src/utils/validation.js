@@ -1,5 +1,3 @@
-
-
 function EmailErrors(val, flag) {
   const errors = [];
   if (!val.$dirty) return errors;
@@ -30,5 +28,3 @@ function UniqueFieldErrors(val, flag) {
 }
 // export feature declared earlier as default
 export { EmailErrors, FieldErrors, UniqueFieldErrors };
-
-

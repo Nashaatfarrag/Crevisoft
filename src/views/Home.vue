@@ -43,7 +43,7 @@
           <v-col cols="12">
             <v-row>
               <v-col>
-                {{ "Hotels found : " + filtered.length ||  hotels.length }}
+                {{ "Hotels found : " + filtered.length || hotels.length }}
               </v-col>
               <v-col>
                 <v-btn @click="flip('byName')" class="ma-1">
@@ -86,12 +86,12 @@ export default {
         price: 1000,
         name: "",
         byName: false,
-        byPrice: false,
+        byPrice: false
       },
       searchKeys: {
         from: "2020-01-10",
-        to: "2021-01-20",
-      },
+        to: "2021-01-20"
+      }
     };
   },
 
@@ -101,11 +101,13 @@ export default {
 
       // forced filter by price range
       output = this.hotels.filter(
-        (hotel) => hotel.price <= this.filterKeys.price
+        hotel => hotel.price <= this.filterKeys.price
       );
       // search by name
       if (this.filterKeys.name) {
-        output = output.filter((hotel) => hotel.name.includes(this.filterKeys.name)  );
+        output = output.filter(hotel =>
+          hotel.name.includes(this.filterKeys.name)
+        );
       }
 
       if (this.filterKeys.byName) {
@@ -117,7 +119,7 @@ export default {
       }
 
       return output;
-    },
+    }
   },
   methods: {
     flip(val) {
@@ -129,14 +131,14 @@ export default {
 
       let from = new Date(this.searchKeys.from);
       let to = new Date(this.searchKeys.to);
-      this.hotels = this.hotels.filter((hotel) => {
+      this.hotels = this.hotels.filter(hotel => {
         let elementDate = new Date(hotel.available_on);
         return elementDate <= to && elementDate >= from;
       });
-    },
+    }
   },
 
-  name: "Home",
+  name: "Home"
 };
 </script>
 <style></style>
