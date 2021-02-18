@@ -1,6 +1,5 @@
 # Crevisoft
  
-![build status](https://travis-ci.com/Nashaatfarrag/Crevisoft.svg?branch=main)
+![build status](https://travis-ci.com/Nashaatfarrag/Crevisoft.svg?branch=main)  [![Maintainability](https://api.codeclimate.com/v1/badges/b18932bcb99166d87988/maintainability)](https://codeclimate.com/github/Nashaatfarrag/Crevisoft/maintainability)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/b18932bcb99166d87988/maintainability)](https://codeclimate.com/github/Nashaatfarrag/Crevisoft/maintainability)
-
+This is the Crevisoft's test task
